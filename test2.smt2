@@ -1,0 +1,12 @@
+(set-logic QF_AUFLIRA)
+(set-option :produce-models true)
+(declare-fun x1 () Real)
+(declare-fun x2 () Real)
+(assert (= x1 1.67))
+(assert (>= x1 0.0))
+(assert (<= x1 1.67))
+(assert (>= x2 0.0))
+(assert (<= x2 1.66))
+(check-sat)
+(get-model)
+
